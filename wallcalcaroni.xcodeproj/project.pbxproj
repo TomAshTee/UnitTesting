@@ -14,7 +14,18 @@
 		719392841FFEE06100E5E849 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719392831FFEE06100E5E849 /* CalculatorViewController.swift */; };
 		7193928D1FFEE18900E5E849 /* CalculationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7193928C1FFEE18900E5E849 /* CalculationManager.swift */; };
 		719392901FFEE3CB00E5E849 /* Operand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7193928F1FFEE3CB00E5E849 /* Operand.swift */; };
+		D6458A6921765CBB00CA73EA /* CalculationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6458A6821765CBB00CA73EA /* CalculationManagerTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6458A6221765C2500CA73EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 719392561FFEDC6D00E5E849 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7193925D1FFEDC6D00E5E849;
+			remoteInfo = wallcalcaroni;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7193925E1FFEDC6D00E5E849 /* wallcalcaroni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wallcalcaroni.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +37,21 @@
 		719392831FFEE06100E5E849 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		7193928C1FFEE18900E5E849 /* CalculationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationManager.swift; sourceTree = "<group>"; };
 		7193928F1FFEE3CB00E5E849 /* Operand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operand.swift; sourceTree = "<group>"; };
+		D6458A5D21765C2500CA73EA /* wallcalcaroniTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wallcalcaroniTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6458A6121765C2500CA73EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6458A6721765CBB00CA73EA /* wallcalcaroniTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wallcalcaroniTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		D6458A6821765CBB00CA73EA /* CalculationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7193925B1FFEDC6D00E5E849 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6458A5A21765C2500CA73EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				719392601FFEDC6D00E5E849 /* wallcalcaroni */,
+				D6458A5E21765C2500CA73EA /* wallcalcaroniTests */,
 				7193925F1FFEDC6D00E5E849 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				7193925E1FFEDC6D00E5E849 /* wallcalcaroni.app */,
+				D6458A5D21765C2500CA73EA /* wallcalcaroniTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +118,16 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
+		D6458A5E21765C2500CA73EA /* wallcalcaroniTests */ = {
+			isa = PBXGroup;
+			children = (
+				D6458A6821765CBB00CA73EA /* CalculationManagerTests.swift */,
+				D6458A6121765C2500CA73EA /* Info.plist */,
+				D6458A6721765CBB00CA73EA /* wallcalcaroniTests-Bridging-Header.h */,
+			);
+			path = wallcalcaroniTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,19 +148,43 @@
 			productReference = 7193925E1FFEDC6D00E5E849 /* wallcalcaroni.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D6458A5C21765C2500CA73EA /* wallcalcaroniTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6458A6421765C2500CA73EA /* Build configuration list for PBXNativeTarget "wallcalcaroniTests" */;
+			buildPhases = (
+				D6458A5921765C2500CA73EA /* Sources */,
+				D6458A5A21765C2500CA73EA /* Frameworks */,
+				D6458A5B21765C2500CA73EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6458A6321765C2500CA73EA /* PBXTargetDependency */,
+			);
+			name = wallcalcaroniTests;
+			productName = wallcalcaroniTests;
+			productReference = D6458A5D21765C2500CA73EA /* wallcalcaroniTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		719392561FFEDC6D00E5E849 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Caleb Stultz";
 				TargetAttributes = {
 					7193925D1FFEDC6D00E5E849 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+					};
+					D6458A5C21765C2500CA73EA = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7193925D1FFEDC6D00E5E849;
 					};
 				};
 			};
@@ -144,6 +202,7 @@
 			projectRoot = "";
 			targets = (
 				7193925D1FFEDC6D00E5E849 /* wallcalcaroni */,
+				D6458A5C21765C2500CA73EA /* wallcalcaroniTests */,
 			);
 		};
 /* End PBXProject section */
@@ -156,6 +215,13 @@
 				7193926C1FFEDC6D00E5E849 /* LaunchScreen.storyboard in Resources */,
 				719392691FFEDC6D00E5E849 /* Assets.xcassets in Resources */,
 				719392671FFEDC6D00E5E849 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6458A5B21765C2500CA73EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +239,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D6458A5921765C2500CA73EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6458A6921765CBB00CA73EA /* CalculationManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6458A6321765C2500CA73EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7193925D1FFEDC6D00E5E849 /* wallcalcaroni */;
+			targetProxy = D6458A6221765C2500CA73EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		719392651FFEDC6D00E5E849 /* Main.storyboard */ = {
@@ -332,6 +414,54 @@
 			};
 			name = Release;
 		};
+		D6458A6521765C2500CA73EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5F3T78YFZV;
+				INFOPLIST_FILE = wallcalcaroniTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomaszjaeschke.wallcalcaroniTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "wallcalcaroniTests/wallcalcaroniTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wallcalcaroni.app/wallcalcaroni";
+			};
+			name = Debug;
+		};
+		D6458A6621765C2500CA73EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5F3T78YFZV;
+				INFOPLIST_FILE = wallcalcaroniTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomaszjaeschke.wallcalcaroniTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "wallcalcaroniTests/wallcalcaroniTests-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wallcalcaroni.app/wallcalcaroni";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -349,6 +479,15 @@
 			buildConfigurations = (
 				7193927C1FFEDC6D00E5E849 /* Debug */,
 				7193927D1FFEDC6D00E5E849 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6458A6421765C2500CA73EA /* Build configuration list for PBXNativeTarget "wallcalcaroniTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6458A6521765C2500CA73EA /* Debug */,
+				D6458A6621765C2500CA73EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
